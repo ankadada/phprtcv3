@@ -3,16 +3,16 @@
 require join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'lib', 'Pili_v2.php'));
 
 $ak = 'gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5';
-$sk = '9G4isTkVuj5ITPqH1ajhljJMTc2k4m-hZh5r5ZsK';
+$sk = 'xxxx';
 
 $mac = new Qiniu\Pili\Mac($ak, $sk);
 $client = new Qiniu\Pili\AppClient($mac);
 $hub = 'lfxlive';
-$title = 'lfx';
+$title = 'lfxl';
 try {
     //创建app
-    // $resp = $client->createApp($hub, $title, $maxUsers);
-    // print_r($resp);exit;
+    $resp = $client->createApp($hub, $title, $maxUsers);
+    print_r($resp);exit;
     //获取app状态
     // $resp = $client->getApp('deq02uhb6');
     // print_r($resp);exit;

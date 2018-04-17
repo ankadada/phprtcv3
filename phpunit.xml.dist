@@ -11,7 +11,7 @@
          syntaxCheck="true"
 >
     <testsuites>
-        <testsuite name="Pili SDK Tests">
+        <testsuite name="Rtc SDK Tests">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

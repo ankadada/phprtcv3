@@ -1,5 +1,5 @@
 <?php
-namespace Qiniu\Pili;
+namespace Qiniu\Rtc;
 
 final class Utils
 {

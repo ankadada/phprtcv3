@@ -26,7 +26,7 @@
       <os_version>Darwin Kernel Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64</os_version>
       <host>sicong.local</host>
       <arch>x86_64</arch>
-      <command_line>tcpflow -c host pili.qiniuapi.com</command_line>
+      <command_line>tcpflow -c host rtc.qiniuapi.com</command_line>
       <uid>501</uid>
       <start_time>2017-06-22T04:49:48Z</start_time>
     </execution_environment>

@@ -1,4 +1,4 @@
-# Pili Streaming Cloud Server-Side Library For PHP
+# Rtc Streaming Cloud Server-Side Library For PHP
 
 ## Features
 
@@ -31,8 +31,8 @@
 ```php
 $ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
 $sk = "xxxx";
-$mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\AppClient($mac);
+$mac = new Qiniu\Rtc\Mac($ak, $sk);
+$client = new Qiniu\Rtc\AppClient($mac);
 $resp=$client->createApp("901","testApp");
 print_r($resp);
 ```
@@ -42,8 +42,8 @@ print_r($resp);
 ```php
 $ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
 $sk = "xxxx";
-$mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\AppClient($mac);
+$mac = new Qiniu\Rtc\Mac($ak, $sk);
+$client = new Qiniu\Rtc\AppClient($mac);
 $resp=$client->getApp("deq02uhb6");
 print_r($resp);
 ```
@@ -53,8 +53,8 @@ print_r($resp);
 ```php
 $ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
 $sk = "xxxx";
-$mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\AppClient($mac);
+$mac = new Qiniu\Rtc\Mac($ak, $sk);
+$client = new Qiniu\Rtc\AppClient($mac);
 $resp=$client->deleteApp("deq02uhb6");
 print_r($resp);
 ```
@@ -64,8 +64,8 @@ print_r($resp);
 ```php
 $ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
 $sk = "xxxx";
-$mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\AppClient($mac);
+$mac = new Qiniu\Rtc\Mac($ak, $sk);
+$client = new Qiniu\Rtc\AppClient($mac);
 $resp=$client->appToken("deq02uhb6", "lfx", '1111', (time()+3600), 'user');
 print_r($resp);
 ```

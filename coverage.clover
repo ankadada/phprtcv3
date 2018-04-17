@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <coverage generated="1513326196">
   <project timestamp="1513326196">
-    <package name="Qiniu\Pili">
+    <package name="Qiniu\Rtc">
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Client.php">
-        <class name="Client" namespace="Qiniu\Pili">
+        <class name="Client" namespace="Qiniu\Rtc">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
         </class>
         <line num="9" type="method" name="__construct" crap="2" count="0"/>
@@ -14,7 +14,7 @@
         <metrics loc="17" ncloc="17" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Config.php">
-        <class name="Config" namespace="Qiniu\Pili">
+        <class name="Config" namespace="Qiniu\Rtc">
           <metrics methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="16" coveredelements="0"/>
         </class>
         <line num="18" type="method" name="__construct" crap="2" count="0"/>
@@ -36,7 +36,7 @@
         <metrics loc="52" ncloc="50" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="16" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/HttpRequest.php">
-        <class name="HttpRequest" namespace="Qiniu\Pili">
+        <class name="HttpRequest" namespace="Qiniu\Rtc">
           <metrics methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="80" coveredstatements="0" elements="89" coveredelements="0"/>
         </class>
         <line num="20" type="method" name="verifyPeer" crap="2" count="0"/>
@@ -131,7 +131,7 @@
         <metrics loc="177" ncloc="139" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="80" coveredstatements="0" elements="89" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/HttpResponse.php">
-        <class name="HttpResponse" namespace="Qiniu\Pili">
+        <class name="HttpResponse" namespace="Qiniu\Rtc">
           <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="25" coveredelements="0"/>
         </class>
         <line num="16" type="method" name="__construct" crap="6" count="0"/>
@@ -162,7 +162,7 @@
         <metrics loc="72" ncloc="51" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="25" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Hub.php">
-        <class name="Hub" namespace="Qiniu\Pili">
+        <class name="Hub" namespace="Qiniu\Rtc">
           <metrics methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="0" elements="39" coveredelements="0"/>
         </class>
         <line num="14" type="method" name="__construct" crap="6" count="0"/>
@@ -215,7 +215,7 @@
         <metrics loc="162" ncloc="97" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="4" elements="47" coveredelements="4"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Mac.php">
-        <class name="Mac" namespace="Qiniu\Pili">
+        <class name="Mac" namespace="Qiniu\Rtc">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="21" coveredelements="0"/>
         </class>
         <line num="9" type="method" name="__construct" crap="2" count="0"/>
@@ -242,7 +242,7 @@
         <metrics loc="41" ncloc="41" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="21" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/RoomClient.php">
-        <class name="RoomClient" namespace="Qiniu\Pili">
+        <class name="RoomClient" namespace="Qiniu\Rtc">
           <metrics methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="0" elements="52" coveredelements="0"/>
         </class>
         <line num="10" type="method" name="__construct" crap="2" count="0"/>
@@ -300,7 +300,7 @@
         <metrics loc="116" ncloc="91" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="0" elements="52" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Stream.php">
-        <class name="Stream" namespace="Qiniu\Pili">
+        <class name="Stream" namespace="Qiniu\Rtc">
           <metrics methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="55" coveredstatements="0" elements="65" coveredelements="0"/>
         </class>
         <line num="14" type="method" name="__construct" crap="6" count="0"/>
@@ -371,7 +371,7 @@
         <metrics loc="193" ncloc="113" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="55" coveredstatements="0" elements="65" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Transport.php">
-        <class name="Transport" namespace="Qiniu\Pili">
+        <class name="Transport" namespace="Qiniu\Rtc">
           <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
         </class>
         <line num="11" type="method" name="__construct" crap="2" count="0"/>
@@ -393,7 +393,7 @@
         <metrics loc="40" ncloc="40" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
       </file>
       <file name="/Users/wf/works/ts/php/pili-sdk-php.v2/lib/Qiniu/Pili/Utils.php">
-        <class name="Utils" namespace="Qiniu\Pili">
+        <class name="Utils" namespace="Qiniu\Rtc">
           <metrics methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="8" elements="19" coveredelements="12"/>
         </class>
         <line num="6" type="method" name="base64UrlEncode" crap="1" count="2"/>

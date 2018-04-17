@@ -1,5 +1,5 @@
 <?php
-namespace Qiniu\Pili;
+namespace Qiniu\Rtc;
 
 final class Config
 {
@@ -7,8 +7,6 @@ final class Config
     const SDK_USER_AGENT = 'pili-sdk-php';
 
     public $USE_HTTPS = false;
-    public $API_HOST = 'pili.qiniuapi.com';
-    public $API_VERSION = 'v2';
 
     public $RTCAPI_HOST = 'http://rtc.qiniuapi.com';
     public $RTCAPI_VERSION = 'v3';   //连麦版本号

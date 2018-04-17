@@ -1,12 +1,12 @@
 <?php
 
-require join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'lib', 'Pili_v2.php'));
+require join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'lib', 'Rtc_v3.php'));
 
 $ak = 'gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5';
 $sk = 'xxxx';
 
-$mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\AppClient($mac);
+$mac = new Qiniu\Rtc\Mac($ak, $sk);
+$client = new Qiniu\Rtc\AppClient($mac);
 $hub = 'lfxlive';
 $title = 'lfxl';
 try {
@@ -14,15 +14,15 @@ try {
     $resp = $client->createApp($hub, $title, $maxUsers);
     print_r($resp);
     // 获取app状态
-    $resp = $client->getApp('deq02uhb6');
+    $resp = $client->getApp('despouqm5');
     print_r($resp);
     //修改app状态
     $mergePublishRtmp = null;
     $mergePublishRtmp['enable'] = true;
-    $resp = $client->UpdateApp('deqq25wl9', $hub, $title, null, $mergePublishRtmp);
+    $resp = $client->UpdateApp('despouqm5', $hub, $title, null, $mergePublishRtmp);
     print_r($resp);
-    //删除app
-    $resp = $client->deleteApp('deq02uhb6');
+    // //删除app
+    $resp = $client->deleteApp('despouqm5');
     print_r($resp);
     //获取房间连麦的成员
     $resp=$client->getappUserNum("deqq25wl9", 'lfx');
@@ -34,7 +34,7 @@ try {
     $resp=$client->listRooms("deqq25wl9", null, null, null);
     print_r($resp);
     //鉴权的有效时间: 1个小时.
-    $resp = $client->appToken("desobxqpx", "lfxl", '1111', (time()+3600), 'user');
+    $resp = $client->appToken("despouqm5", "lfxl", '1111', (time()+3600), 'user');
     print_r($resp);
 } catch (\Exception $e) {
     echo "Error:", $e, "\n";

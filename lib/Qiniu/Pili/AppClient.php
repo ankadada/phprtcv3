@@ -161,6 +161,7 @@ class AppClient
      * prefix: 所查询房间名的前缀索引，可以为空。
      * offset: int 类型，分页查询的位移标记。
      * limit: int 类型，此次查询的最大长度。
+     * GET /v3/apps/<AppID>/rooms?prefix=<RoomNamePrefix>&offset=<Offset>&limit=<Limit>
      */
     public function listRooms($appId, $prefix, $offset, $limit)
     {

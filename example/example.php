@@ -3,7 +3,7 @@
 require join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'lib', 'Rtc_v3.php'));
 
 $ak = 'gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5';
-$sk = 'xxxx';
+$sk = '9G4isTkVuj5ITPqH1ajhljJMTc2k4m-hZh5r5ZsK';
 
 $mac = new Qiniu\Rtc\Mac($ak, $sk);
 $client = new Qiniu\Rtc\AppClient($mac);
@@ -25,7 +25,7 @@ try {
     $resp = $client->deleteApp('despouqm5');
     print_r($resp);
     //获取房间连麦的成员
-    $resp=$client->getappUserNum("deqq25wl9", 'lfx');
+    $resp=$client->getappUserNum("despz8txh", 'lfxl');
     print_r($resp);
     //剔除房间的连麦成员
     $resp=$client->kickingPlayer("deqq25wl9", 'lfx', "qiniu-f6e07b78-4dc8-45fb-a701-a9e158abb8e6");

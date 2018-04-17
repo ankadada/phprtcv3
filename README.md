@@ -2,11 +2,11 @@
 
 ## Features
 
-- Room
-    - [x] 创建房间: room->createRoom()
-    - [x] 查看房间: room->getRoom()
-    - [x] 删除房间: room->deleteRoom()
-    - [x] 生成房间token: room->roomToken()
+- App
+    - [x] 创建房间: App->createApp()
+    - [x] 查看房间: App->getApp()
+    - [x] 删除房间: App->deleteApp()
+    - [x] 生成房间token: App->AppToken()
 
 
 
@@ -15,69 +15,57 @@
 - [Installation](#installation)
 - [Usage](#usage)
     - [Configuration](#configuration)
-    - [Room](#room)
-        - [Create a room](#create-a-room)
-        - [Get a room](#get-a-room)
-        - [Delete a room](#delete-a-room)
-        - [Generate a room token](#generate-a-room-token)
+    - [App](#app)
+        - [Create a app](#create-a-app)
+        - [Get a app](#get-a-app)
+        - [Delete a app](#delete-a-app)
+        - [Generate a app token](#generate-a-app-token)
 
 
 ## Usage
 
-### Configuration
+### App
+
+#### Create a app
 
 ```php
-    // Change API host as necessary
-    //
-    // pili.qiniuapi.com as default
-    // pili-lte.qiniuapi.com is the latest RC version
-    //
-    // $cfg = \Pili\Config::getInstance();
-    // $cfg->API_HOST = 'pili.qiniuapi.com'; // default
-```
-
-### Room
-
-#### Create a room
-
-```php
-$ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
-$sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
+$ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
+$sk = "xxxx";
 $mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\RoomClient($mac);
-$resp=$client->createRoom("901","testroom");
+$client = new Qiniu\Pili\AppClient($mac);
+$resp=$client->createApp("901","testApp");
 print_r($resp);
 ```
 
-#### Get a room
+#### Get a app
 
 ```php
-$ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
-$sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
+$ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
+$sk = "xxxx";
 $mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\RoomClient($mac);
-$resp=$client->getRoom("testroom");
+$client = new Qiniu\Pili\AppClient($mac);
+$resp=$client->getApp("deq02uhb6");
 print_r($resp);
 ```
 
-#### Delete a room
+#### Delete a app
 
 ```php
-$ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
-$sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
+$ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
+$sk = "xxxx";
 $mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\RoomClient($mac);
-$resp=$client->deleteRoom("testroom");
+$client = new Qiniu\Pili\AppClient($mac);
+$resp=$client->deleteApp("deq02uhb6");
 print_r($resp);
 ```
 
-#### Generate a room token
+#### Generate a app token
 
 ```php
-$ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
-$sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
+$ak = "gwd_gV4gPKZZsmEOvAuNU1AcumicmuHooTfu64q5";
+$sk = "xxxx";
 $mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\RoomClient($mac);
-$resp=$client->roomToken("testroom","123",'admin',1785600000000);
+$client = new Qiniu\Pili\AppClient($mac);
+$resp=$client->appToken("deq02uhb6", "lfx", '1111', (time()+3600), 'user');
 print_r($resp);
 ```
